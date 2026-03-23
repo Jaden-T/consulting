@@ -557,7 +557,10 @@ nav{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
 /* =========================
    About & Contact
    ========================= */
-.about-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+.about-grid{  display: grid;
+  grid-template-columns: 1fr; /* single column */
+  gap: 18px;                  /* keeps spacing between cards if you add more later */
+}
 .contact{display:flex; flex-wrap:wrap; gap:12px; justify-content:center}
 .contact a {
   padding:12px 14px;
