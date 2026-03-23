@@ -677,14 +677,17 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
   transform: scale(1.05);
 }
 
-.strengths {
+.deliverables {
   margin-top: 12px;
   list-style: disc inside;
-  color: #e4e4e4;
+  color: #fefefe; /* default text color (white) */
+  padding-left: 1em;
 }
 
-.strengths li {
-  margin-bottom: 6px;
+.deliverables .deliverable-name {
+  color: var(--gold); /* gold for deliverable name */
+  font-weight: 600;   /* optional: make it stand out */
+  margin-right: 6px;  /* spacing between name and description */
 }
 
 
@@ -1087,16 +1090,16 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
       <!-- RIGHT CARD -->
       <div class="about-card">
         <h3>Common Deliverables</h3>
-        <ul class="strengths">
-          <li>eLearning Modules – Interactive online courses for self-paced learning.</li>
-          <li>Microlearning Modules – Short, focused lessons for quick skill or knowledge updates.</li>
-          <li>Virtual Training Programs / Webinars – Live or recorded online sessions.</li>
-          <li>Training Videos – Engaging, scenario-based or instructional videos.</li>
-          <li>Slide Decks – Presentation decks for training sessions or corporate use.</li>
-          <li>Standard Operating Procedure (SOP) Documentation – Step-by-step guides for consistent processes.</li>
-          <li>Job Aids / Quick Reference Guides – One-page summaries or checklists for easy on-the-job use.</li>
-          <li>Assessments & Quizzes – Knowledge checks, interactive tests, or evaluation tools.</li>
-        </ul>
+      <ul class="deliverables">
+        <li><span class="deliverable-name">eLearning Modules:</span> Interactive online courses for self-paced learning.</li>
+        <li><span class="deliverable-name">Microlearning Modules:</span> Short, focused lessons for quick skill or knowledge updates.</li>
+        <li><span class="deliverable-name">Virtual Training Programs / Webinars:</span> Live or recorded online sessions.</li>
+        <li><span class="deliverable-name">Training Videos:</span> Engaging, scenario-based or instructional videos.</li>
+        <li><span class="deliverable-name">Slide Decks:</span> Presentation decks for training sessions or corporate use.</li>
+        <li><span class="deliverable-name">SOP Documentation:</span> Step-by-step guides for consistent processes.</li>
+        <li><span class="deliverable-name">Job Aids / Quick Reference Guides:</span> One-page summaries or checklists for easy on-the-job use.</li>
+        <li><span class="deliverable-name">Assessments & Quizzes:</span> Knowledge checks, interactive tests, or evaluation tools.</li>
+      </ul>
       </div>
 
     </div>
