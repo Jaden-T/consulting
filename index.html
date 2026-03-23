@@ -679,15 +679,21 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 
 .deliverables {
   margin-top: 12px;
-  list-style: none; /* removes bullets */
-  padding-left: 0;  /* removes default indent */
-  color: #fefefe;
+  list-style: none;
+  padding-left: 0;
+  color: #fefefe; /* default text color (white) */
 }
 
 .deliverables .deliverable-name {
   color: var(--gold);
   font-weight: 600;
   margin-right: 6px;
+  font-size: 1rem; /* keeps it normal size */
+}
+
+.deliverables li {
+  font-size: 0.875rem; /* slightly smaller white text */
+  line-height: 1.4;    /* keeps spacing comfortable */
 }
 
 
